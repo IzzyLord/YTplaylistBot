@@ -1,5 +1,5 @@
-'''YTPlaylistDL, An Telegram Bot Project
-Copyright (c) 2021 Anjana Madu <https://github.com/AnjanaMadu>
+'''YTplaylistBot, An Telegram Bot Project
+Copyright (c) 2021 Izzy Lord <https://github.com/IzzyLord>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -35,7 +35,7 @@ async def cb_handler(client, update):
 	cb_data = update.data
 	
 	if "help" in cb_data:
-		await update.message.edit_text("Just Send URL with Format.(Audio/Video)\nExample: `https://youtube.com/playlist?list=xxxxxxxxxx audio`\n\nPowered by @Harp_Tech",
+		await update.message.edit_text("Just Send URL with Format.(Audio/Video)\nExample: `https://youtube.com/playlist?list=xxxxxxxxxx audio`\n\nPowered by @NjCasual",
 			reply_markup=InlineKeyboardMarkup(
 				[[
 					InlineKeyboardButton("🧰 About", callback_data=f"about"),
@@ -43,7 +43,7 @@ async def cb_handler(client, update):
 				]]
 			))
 	elif "about" in cb_data:
-		await update.message.edit_text("Language: Python\nFramework: Pyrogram\nEngine: YTDL\nCorded By: @Anjana_Ma\n\nPowered by @Harp_Tech",
+		await update.message.edit_text("Language: Python\nFramework: Pyrogram\nEngine: YTDL\nCorded By: @psycholy9\n\nPowered by @NjCasual",
 			reply_markup=InlineKeyboardMarkup(
 				[[
 					InlineKeyboardButton("🛠 Help", callback_data=f"help"),
@@ -51,7 +51,7 @@ async def cb_handler(client, update):
 				]]
 			))
 	elif "back" in cb_data:
-		await update.message.edit_text(f"Hi {update.from_user.mention},If you need any help, Just click help button.\n\nProject by @Harp_Tech",
+		await update.message.edit_text(f"Hi {update.from_user.mention},If you need any help, Just click help button.\n\nProject by @NjCasual",
 			reply_markup=InlineKeyboardMarkup(
 				[[
 					InlineKeyboardButton("🛠 Help", callback_data=f"help"),
