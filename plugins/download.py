@@ -1,5 +1,5 @@
-'''YTPlaylistDL, An Telegram Bot Project
-Copyright (c) 2021 Anjana Madu <https://github.com/AnjanaMadu>
+'''YTplaylistBot, An Telegram Bot Project
+Copyright (c) 2021 Izzy Lord <https://github.com/IzzyLord>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -323,7 +323,7 @@ async def pyro_fsub(c, message, fsub):
         if user.status == "kicked":
             await c.send_message(
                 chat_id=message.chat.id,
-                text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/harp_chat).",
+                text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/NjCasual).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -335,7 +335,7 @@ async def pyro_fsub(c, message, fsub):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Join Now", url="https://t.me/harp_tech")
+                        InlineKeyboardButton("Join Now", url="https://t.me/NjCasual")
                     ]
                 ]
             )
@@ -345,7 +345,7 @@ async def pyro_fsub(c, message, fsub):
         print(kk)
         await c.send_message(
             chat_id=message.chat.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/harp_chat).",
+            text="Something went Wrong. Contact my [Support Group](https://t.me/NjCasual).",
             parse_mode="markdown",
             disable_web_page_preview=True)
         return False
